@@ -3,7 +3,6 @@
 # FTP server and client implementation in C
 
    Eigo Madaloja
-   eigo.madaloja@gmail.com
 
 ## Compiling
 Type **make** to compile, **make clean** to clear the *.o files and the executables.
@@ -24,14 +23,23 @@ Type **make** to compile, **make clean** to clear the *.o files and the executab
 
    
 **open** *hostname [port]* -  connect to host <hostname> on port <port>. <port> defaults to 21.
+
    **ls** *[dirname]* -  list directory contents. Argument <dirname> is not implemented in FTP server but can of course be used with other servers that implement it.
+   
    **cd** *path*  -  change current path.
+   
    **pwd**  -  print current directory.
+   
    **get** *filename* -  download file from server.
+   
    **put** *filename* -  upload file to server.
+   
    **user** *username*  -  send user's name to server.
+   
    **pass** *password*  -  send user's password to server.
+   
    **close**  -  disconnect from server.
+   
    **quit** -  disconnect from server and end the program.
 
 ### EXPLANATION
